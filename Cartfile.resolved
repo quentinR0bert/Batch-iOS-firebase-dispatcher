@@ -1,0 +1,2 @@
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json" "6.18.0"
+github "BatchLabs/ios-sdk" "1.15.0"
