@@ -21,7 +21,7 @@ You can find a guide explaining how to use the reported events [here](https://he
 ## CocoaPods
 
 ```
-pod 'Batch-Firebase-Dispatcher'
+pod 'BatchFirebaseDispatcher'
 ```
 
 Read our [setup documentation](https://doc.batch.com/) to follow a step by step tutorial for integrating Batch features into your app.
