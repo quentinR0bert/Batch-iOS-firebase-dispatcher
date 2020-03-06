@@ -10,25 +10,8 @@
 		51053780241257F900589FC6 /* BatchFirebaseDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5105377E241257F400589FC6 /* BatchFirebaseDispatcher.m */; };
 		51053781241257F900589FC6 /* BatchFirebaseDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 5105377F241257F400589FC6 /* BatchFirebaseDispatcher.h */; };
 		5105378424125A0100589FC6 /* Batch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5105378324125A0100589FC6 /* Batch.framework */; };
-		5105378524125A0100589FC6 /* Batch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5105378324125A0100589FC6 /* Batch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5105378824125A0400589FC6 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5105378724125A0400589FC6 /* FirebaseAnalytics.framework */; };
-		5105378924125A0400589FC6 /* FirebaseAnalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5105378724125A0400589FC6 /* FirebaseAnalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		5105378624125A0100589FC6 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5105378924125A0400589FC6 /* FirebaseAnalytics.framework in Embed Frameworks */,
-				5105378524125A0100589FC6 /* Batch.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5105377E241257F400589FC6 /* BatchFirebaseDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BatchFirebaseDispatcher.m; path = Classes/BatchFirebaseDispatcher.m; sourceTree = "<group>"; };
@@ -110,7 +93,6 @@
 				51D530C42412553B009E7531 /* Sources */,
 				51D530C52412553B009E7531 /* Frameworks */,
 				51D530C62412553B009E7531 /* Resources */,
-				5105378624125A0100589FC6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
