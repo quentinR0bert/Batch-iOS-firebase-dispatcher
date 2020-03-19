@@ -12,6 +12,9 @@
 
 @implementation BatchPayloadDispatcherTest
 
+@synthesize notificationUserInfo;
+@synthesize sourceMessage;
+
 - (nullable NSObject *)customValueForKey:(nonnull NSString *)key {
     if (self.customPayload != nil) {
         return [self.customPayload objectForKey:key];

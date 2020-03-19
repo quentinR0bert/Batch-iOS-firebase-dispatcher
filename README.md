@@ -1,3 +1,5 @@
+[![Cocoapods](https://img.shields.io/cocoapods/v/BatchFirebaseDispatcher)](https://cocoapods.org/pods/BatchFirebaseDispatcher)
+
 Batch.com iOS Firebase Event Dispatcher
 ==================
 
