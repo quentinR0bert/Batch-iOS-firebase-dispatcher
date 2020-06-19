@@ -1,4 +1,6 @@
 [![Cocoapods](https://img.shields.io/cocoapods/v/BatchFirebaseDispatcher)](https://cocoapods.org/pods/BatchFirebaseDispatcher)
+[![Github Action](https://github.com/BatchLabs/Batch-iOS-firebase-dispatcher/workflows/iOS%20CI/badge.svg)](https://github.com/BatchLabs/Batch-iOS-firebase-dispatcher/actions?query=workflow%3A%22iOS+CI%22)
+[![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=BatchLabs_Batch-iOS-firebase-dispatcher&metric=coverage)](https://sonarcloud.io/dashboard?id=BatchLabs_Batch-iOS-firebase-dispatcher)
 
 Batch.com iOS Firebase Event Dispatcher
 ==================

@@ -1,11 +1,3 @@
-//
-//  BatchFirebaseDispatcherTests.m
-//  Batch-Firebase-Dispatcher_Tests
-//
-//  Created by Elliot Gouy on 23/10/2019.
-//  Copyright © 2019 elliot. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>

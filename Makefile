@@ -33,4 +33,7 @@ test-sonar: clean
 		-classpath $(CURDIR)/.sonar/sonar-scanner-cli-4.2.0.1873.jar \
 		org.sonarsource.scanner.cli.Main
 
-ci: test-sonar
+carthage:
+	carthage bootstrap --platform ios
+
+ci: carthage test-sonar
