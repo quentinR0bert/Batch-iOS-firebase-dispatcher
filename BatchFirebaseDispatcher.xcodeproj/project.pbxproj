@@ -3,33 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		51053780241257F900589FC6 /* BatchFirebaseDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5105377E241257F400589FC6 /* BatchFirebaseDispatcher.m */; };
 		51053781241257F900589FC6 /* BatchFirebaseDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 5105377F241257F400589FC6 /* BatchFirebaseDispatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5105378424125A0100589FC6 /* Batch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5105378324125A0100589FC6 /* Batch.framework */; };
-		5105378824125A0400589FC6 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5105378724125A0400589FC6 /* FirebaseAnalytics.framework */; };
+		51C49D7525F7B28800C8E4F6 /* Batch in Frameworks */ = {isa = PBXBuildFile; productRef = 51C49D7425F7B28800C8E4F6 /* Batch */; };
+		51C49D7C25F7B32F00C8E4F6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 51C49D7B25F7B32F00C8E4F6 /* FirebaseAnalytics */; };
+		51C49D8425F7B40D00C8E4F6 /* OCMock.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C49D8325F7B40D00C8E4F6 /* OCMock.xcframework */; };
+		51C49D8C25F7B44E00C8E4F6 /* Batch in Frameworks */ = {isa = PBXBuildFile; productRef = 51C49D8B25F7B44E00C8E4F6 /* Batch */; };
+		51C49D8E25F7B45000C8E4F6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 51C49D8D25F7B45000C8E4F6 /* FirebaseAnalytics */; };
 		625AA2FA2424F4BB000DACC4 /* BatchFirebaseDispatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D530C82412553C009E7531 /* BatchFirebaseDispatcher.framework */; };
 		625AA30E2424F59C000DACC4 /* BatchFirebaseDispatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 625AA3052424F538000DACC4 /* BatchFirebaseDispatcherTests.m */; };
 		625AA30F2424F59C000DACC4 /* BatchPayloadDispatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 625AA3062424F538000DACC4 /* BatchPayloadDispatcherTests.m */; };
-		625AA3102424F5B2000DACC4 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625AA2ED2424D605000DACC4 /* OCMock.framework */; };
 		625AA3132424F5E4000DACC4 /* Tests-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 625AA3072424F538000DACC4 /* Tests-Prefix.pch */; };
-		625AA3172424F9F2000DACC4 /* Batch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5105378324125A0100589FC6 /* Batch.framework */; };
-		625AA3182424F9F2000DACC4 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5105378724125A0400589FC6 /* FirebaseAnalytics.framework */; };
-		625AA3242424F9F2000DACC4 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625AA3192424F9F2000DACC4 /* Firebase.framework */; };
-		625AA3252424F9F2000DACC4 /* GoogleDataTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625AA31A2424F9F2000DACC4 /* GoogleDataTransport.framework */; };
-		625AA3262424F9F2000DACC4 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625AA31B2424F9F2000DACC4 /* GoogleAppMeasurement.framework */; };
-		625AA3272424F9F2000DACC4 /* GoogleDataTransportCCTSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625AA31C2424F9F2000DACC4 /* GoogleDataTransportCCTSupport.framework */; };
-		625AA3282424F9F2000DACC4 /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625AA31D2424F9F2000DACC4 /* PromisesObjC.framework */; };
-		625AA3292424F9F2000DACC4 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625AA31E2424F9F2000DACC4 /* nanopb.framework */; };
-		625AA32A2424F9F2000DACC4 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625AA31F2424F9F2000DACC4 /* GoogleUtilities.framework */; };
-		625AA32B2424F9F2000DACC4 /* FirebaseInstallations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625AA3202424F9F2000DACC4 /* FirebaseInstallations.framework */; };
-		625AA32C2424F9F2000DACC4 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625AA3212424F9F2000DACC4 /* FirebaseCoreDiagnostics.framework */; };
-		625AA32D2424F9F2000DACC4 /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625AA3222424F9F2000DACC4 /* FIRAnalyticsConnector.framework */; };
-		625AA32E2424F9F2000DACC4 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625AA3232424F9F2000DACC4 /* FirebaseCore.framework */; };
-		625AA3322424FAC1000DACC4 /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 625AA2ED2424D605000DACC4 /* OCMock.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +37,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				625AA3322424FAC1000DACC4 /* OCMock.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +45,9 @@
 /* Begin PBXFileReference section */
 		5105377E241257F400589FC6 /* BatchFirebaseDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BatchFirebaseDispatcher.m; path = Classes/BatchFirebaseDispatcher.m; sourceTree = "<group>"; };
 		5105377F241257F400589FC6 /* BatchFirebaseDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BatchFirebaseDispatcher.h; path = Classes/BatchFirebaseDispatcher.h; sourceTree = "<group>"; };
-		5105378324125A0100589FC6 /* Batch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Batch.framework; path = Carthage/Build/iOS/Batch.framework; sourceTree = "<group>"; };
-		5105378724125A0400589FC6 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Carthage/Build/iOS/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		51C49D8325F7B40D00C8E4F6 /* OCMock.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCMock.xcframework; path = Carthage/Build/OCMock.xcframework; sourceTree = "<group>"; };
 		51D530C82412553C009E7531 /* BatchFirebaseDispatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BatchFirebaseDispatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D530D3241256E8009E7531 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Module/Info.plist; sourceTree = "<group>"; };
-		625AA2ED2424D605000DACC4 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Carthage/Build/iOS/OCMock.framework; sourceTree = "<group>"; };
 		625AA2F52424F4BB000DACC4 /* BatchFirebaseDispatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatchFirebaseDispatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		625AA3022424F538000DACC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		625AA3032424F538000DACC4 /* BatchPayloadDispatcherTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatchPayloadDispatcherTests.h; sourceTree = "<group>"; };
@@ -70,18 +55,6 @@
 		625AA3062424F538000DACC4 /* BatchPayloadDispatcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatchPayloadDispatcherTests.m; sourceTree = "<group>"; };
 		625AA3072424F538000DACC4 /* Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		625AA3112424F5DB000DACC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		625AA3192424F9F2000DACC4 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
-		625AA31A2424F9F2000DACC4 /* GoogleDataTransport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleDataTransport.framework; path = Carthage/Build/iOS/GoogleDataTransport.framework; sourceTree = "<group>"; };
-		625AA31B2424F9F2000DACC4 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Carthage/Build/iOS/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
-		625AA31C2424F9F2000DACC4 /* GoogleDataTransportCCTSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleDataTransportCCTSupport.framework; path = Carthage/Build/iOS/GoogleDataTransportCCTSupport.framework; sourceTree = "<group>"; };
-		625AA31D2424F9F2000DACC4 /* PromisesObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromisesObjC.framework; path = Carthage/Build/iOS/PromisesObjC.framework; sourceTree = "<group>"; };
-		625AA31E2424F9F2000DACC4 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Carthage/Build/iOS/nanopb.framework; sourceTree = "<group>"; };
-		625AA31F2424F9F2000DACC4 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Carthage/Build/iOS/GoogleUtilities.framework; sourceTree = "<group>"; };
-		625AA3202424F9F2000DACC4 /* FirebaseInstallations.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstallations.framework; path = Carthage/Build/iOS/FirebaseInstallations.framework; sourceTree = "<group>"; };
-		625AA3212424F9F2000DACC4 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Carthage/Build/iOS/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
-		625AA3222424F9F2000DACC4 /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIRAnalyticsConnector.framework; path = Carthage/Build/iOS/FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
-		625AA3232424F9F2000DACC4 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Carthage/Build/iOS/FirebaseCore.framework; sourceTree = "<group>"; };
-		625AA32F2424FA6F000DACC4 /* OCMock.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = OCMock.framework.dSYM; path = Carthage/Build/iOS/OCMock.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5105378824125A0400589FC6 /* FirebaseAnalytics.framework in Frameworks */,
-				5105378424125A0100589FC6 /* Batch.framework in Frameworks */,
+				51C49D7C25F7B32F00C8E4F6 /* FirebaseAnalytics in Frameworks */,
+				51C49D7525F7B28800C8E4F6 /* Batch in Frameworks */,
+				51C49D8425F7B40D00C8E4F6 /* OCMock.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,21 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				625AA3242424F9F2000DACC4 /* Firebase.framework in Frameworks */,
-				625AA3252424F9F2000DACC4 /* GoogleDataTransport.framework in Frameworks */,
-				625AA3262424F9F2000DACC4 /* GoogleAppMeasurement.framework in Frameworks */,
-				625AA3272424F9F2000DACC4 /* GoogleDataTransportCCTSupport.framework in Frameworks */,
-				625AA3282424F9F2000DACC4 /* PromisesObjC.framework in Frameworks */,
-				625AA3292424F9F2000DACC4 /* nanopb.framework in Frameworks */,
-				625AA32A2424F9F2000DACC4 /* GoogleUtilities.framework in Frameworks */,
-				625AA32B2424F9F2000DACC4 /* FirebaseInstallations.framework in Frameworks */,
-				625AA32C2424F9F2000DACC4 /* FirebaseCoreDiagnostics.framework in Frameworks */,
-				625AA32D2424F9F2000DACC4 /* FIRAnalyticsConnector.framework in Frameworks */,
-				625AA32E2424F9F2000DACC4 /* FirebaseCore.framework in Frameworks */,
-				625AA3172424F9F2000DACC4 /* Batch.framework in Frameworks */,
-				625AA3182424F9F2000DACC4 /* FirebaseAnalytics.framework in Frameworks */,
 				625AA2FA2424F4BB000DACC4 /* BatchFirebaseDispatcher.framework in Frameworks */,
-				625AA3102424F5B2000DACC4 /* OCMock.framework in Frameworks */,
+				51C49D8C25F7B44E00C8E4F6 /* Batch in Frameworks */,
+				51C49D8E25F7B45000C8E4F6 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,21 +84,7 @@
 		5105378224125A0100589FC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				625AA32F2424FA6F000DACC4 /* OCMock.framework.dSYM */,
-				625AA3222424F9F2000DACC4 /* FIRAnalyticsConnector.framework */,
-				625AA3192424F9F2000DACC4 /* Firebase.framework */,
-				625AA3232424F9F2000DACC4 /* FirebaseCore.framework */,
-				625AA3212424F9F2000DACC4 /* FirebaseCoreDiagnostics.framework */,
-				625AA3202424F9F2000DACC4 /* FirebaseInstallations.framework */,
-				625AA31B2424F9F2000DACC4 /* GoogleAppMeasurement.framework */,
-				625AA31A2424F9F2000DACC4 /* GoogleDataTransport.framework */,
-				625AA31C2424F9F2000DACC4 /* GoogleDataTransportCCTSupport.framework */,
-				625AA31F2424F9F2000DACC4 /* GoogleUtilities.framework */,
-				625AA31E2424F9F2000DACC4 /* nanopb.framework */,
-				625AA31D2424F9F2000DACC4 /* PromisesObjC.framework */,
-				625AA2ED2424D605000DACC4 /* OCMock.framework */,
-				5105378724125A0400589FC6 /* FirebaseAnalytics.framework */,
-				5105378324125A0100589FC6 /* Batch.framework */,
+				51C49D8325F7B40D00C8E4F6 /* OCMock.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,6 +159,10 @@
 			dependencies = (
 			);
 			name = BatchFirebaseDispatcher;
+			packageProductDependencies = (
+				51C49D7425F7B28800C8E4F6 /* Batch */,
+				51C49D7B25F7B32F00C8E4F6 /* FirebaseAnalytics */,
+			);
 			productName = "Batch-Firebase-Dispatcher";
 			productReference = 51D530C82412553C009E7531 /* BatchFirebaseDispatcher.framework */;
 			productType = "com.apple.product-type.framework";
@@ -230,6 +182,10 @@
 				625AA2FC2424F4BB000DACC4 /* PBXTargetDependency */,
 			);
 			name = BatchFirebaseDispatcherTests;
+			packageProductDependencies = (
+				51C49D8B25F7B44E00C8E4F6 /* Batch */,
+				51C49D8D25F7B45000C8E4F6 /* FirebaseAnalytics */,
+			);
 			productName = BatchFirebaseDispatcherTests;
 			productReference = 625AA2F52424F4BB000DACC4 /* BatchFirebaseDispatcherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -260,6 +216,10 @@
 				Base,
 			);
 			mainGroup = 51D530BE2412553B009E7531;
+			packageReferences = (
+				51C49D7325F7B28800C8E4F6 /* XCRemoteSwiftPackageReference "Batch-iOS-SDK" */,
+				51C49D7A25F7B32F00C8E4F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 51D530C92412553C009E7531 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -579,6 +539,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		51C49D7325F7B28800C8E4F6 /* XCRemoteSwiftPackageReference "Batch-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BatchLabs/Batch-iOS-SDK.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.0;
+			};
+		};
+		51C49D7A25F7B32F00C8E4F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		51C49D7425F7B28800C8E4F6 /* Batch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51C49D7325F7B28800C8E4F6 /* XCRemoteSwiftPackageReference "Batch-iOS-SDK" */;
+			productName = Batch;
+		};
+		51C49D7B25F7B32F00C8E4F6 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51C49D7A25F7B32F00C8E4F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		51C49D8B25F7B44E00C8E4F6 /* Batch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51C49D7325F7B28800C8E4F6 /* XCRemoteSwiftPackageReference "Batch-iOS-SDK" */;
+			productName = Batch;
+		};
+		51C49D8D25F7B45000C8E4F6 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51C49D7A25F7B32F00C8E4F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 51D530BF2412553B009E7531 /* Project object */;
 }
