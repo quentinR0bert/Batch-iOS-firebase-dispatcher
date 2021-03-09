@@ -14,6 +14,7 @@ NSString* const BatchFirebaseMedium = @"medium";
 NSString* const BatchFirebaseContent = @"content";
 
 NSString* const BatchFirebaseTrackingId = @"batch_tracking_id";
+NSString* const BatchFirebaseWebViewAnalyticsId = @"batch_webview_analytics_id";
 
 @implementation BatchFirebaseDispatcher
 
@@ -53,6 +54,10 @@ NSString* const BatchFirebaseTrackingId = @"batch_tracking_id";
     [parameters setValue:@"batch" forKey:BatchFirebaseSource];
     [parameters setValue:@"in-app" forKey:BatchFirebaseMedium];
     [parameters setValue:payload.trackingId forKey:BatchFirebaseTrackingId];
+    
+    if (payload.webViewAnalyticsIdentifier != nil) {
+        [parameters setValue:payload.webViewAnalyticsIdentifier forKey:BatchFirebaseWebViewAnalyticsId];
+    }
     
     NSString *deeplink = payload.deeplink;
     if (deeplink != nil) {
@@ -178,12 +183,16 @@ NSString* const BatchFirebaseTrackingId = @"batch_tracking_id";
             return @"batch_notification_open";
         case BatchEventDispatcherTypeMessagingShow:
             return @"batch_in_app_show";
+        case BatchEventDispatcherTypeMessagingCloseError:
+            return @"batch_in_app_close_error";
         case BatchEventDispatcherTypeMessagingClose:
             return @"batch_in_app_close";
         case BatchEventDispatcherTypeMessagingAutoClose:
             return @"batch_in_app_auto_close";
         case BatchEventDispatcherTypeMessagingClick:
             return @"batch_in_app_click";
+        case BatchEventDispatcherTypeMessagingWebViewClick:
+            return @"batch_in_app_webview_click";
         default:
             return @"batch_unknown";
     }
