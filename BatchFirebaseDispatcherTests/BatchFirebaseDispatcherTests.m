@@ -205,14 +205,30 @@
     OCMVerify([_helperMock logEventWithName:expectedName parameters:expectedParameters]);
 }
 
+- (void)testInAppWebViewButtonID
+{
+    BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
+    testPayload.webViewAnalyticsIdentifier = @"jesuisunbuttonid";
+    
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeMessagingWebViewClick payload:testPayload];
+    
+    NSString *expectedName = @"batch_in_app_webview_click";
+    NSDictionary<NSString *, id> *expectedParameters = @{
+        @"source": @"batch",
+        @"medium": @"in-app",
+        @"batch_webview_analytics_id": @"jesuisunbuttonid"
+    };
+    OCMVerify([_helperMock logEventWithName:expectedName parameters:expectedParameters]);
+}
+
 - (void)testInAppDeeplinkContentQueryVars
 {
     BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
     testPayload.deeplink = @"https://batch.com/test-ios?utm_content=yoloswag";
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeMessagingClick payload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeMessagingCloseError payload:testPayload];
     
-    NSString *expectedName = @"batch_in_app_click";
+    NSString *expectedName = @"batch_in_app_close_error";
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"source": @"batch",
         @"medium": @"in-app",
