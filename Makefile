@@ -36,4 +36,4 @@ test-sonar: clean
 carthage:
 	carthage bootstrap --platform ios
 
-ci: carthage test-sonar
+ci: test
