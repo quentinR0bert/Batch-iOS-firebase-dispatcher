@@ -29,16 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "625AA2F42424F4BB000DACC4"
-               BuildableName = "BatchFirebaseDispatcherTests.xctest"
-               BlueprintName = "BatchFirebaseDispatcherTests"
-               ReferencedContainer = "container:BatchFirebaseDispatcher.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

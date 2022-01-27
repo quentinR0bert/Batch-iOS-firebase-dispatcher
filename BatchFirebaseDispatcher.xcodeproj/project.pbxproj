@@ -11,40 +11,13 @@
 		51053781241257F900589FC6 /* BatchFirebaseDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 5105377F241257F400589FC6 /* BatchFirebaseDispatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51C49D7525F7B28800C8E4F6 /* Batch in Frameworks */ = {isa = PBXBuildFile; productRef = 51C49D7425F7B28800C8E4F6 /* Batch */; };
 		51C49D7C25F7B32F00C8E4F6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 51C49D7B25F7B32F00C8E4F6 /* FirebaseAnalytics */; };
-		51C49D8C25F7B44E00C8E4F6 /* Batch in Frameworks */ = {isa = PBXBuildFile; productRef = 51C49D8B25F7B44E00C8E4F6 /* Batch */; };
-		51C49D8E25F7B45000C8E4F6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 51C49D8D25F7B45000C8E4F6 /* FirebaseAnalytics */; };
-		625AA2FA2424F4BB000DACC4 /* BatchFirebaseDispatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D530C82412553C009E7531 /* BatchFirebaseDispatcher.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		625AA2FB2424F4BB000DACC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 51D530BF2412553B009E7531 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 51D530C72412553B009E7531;
-			remoteInfo = BatchFirebaseDispatcher;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		625AA3312424FAA9000DACC4 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5105377E241257F400589FC6 /* BatchFirebaseDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BatchFirebaseDispatcher.m; path = Classes/BatchFirebaseDispatcher.m; sourceTree = "<group>"; };
 		5105377F241257F400589FC6 /* BatchFirebaseDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BatchFirebaseDispatcher.h; path = Classes/BatchFirebaseDispatcher.h; sourceTree = "<group>"; };
-		51C49D8325F7B40D00C8E4F6 /* OCMock.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCMock.xcframework; path = Carthage/Build/OCMock.xcframework; sourceTree = "<group>"; };
 		51D530C82412553C009E7531 /* BatchFirebaseDispatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BatchFirebaseDispatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D530D3241256E8009E7531 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Module/Info.plist; sourceTree = "<group>"; };
-		625AA2F52424F4BB000DACC4 /* BatchFirebaseDispatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatchFirebaseDispatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,23 +30,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		625AA2F22424F4BB000DACC4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				625AA2FA2424F4BB000DACC4 /* BatchFirebaseDispatcher.framework in Frameworks */,
-				51C49D8C25F7B44E00C8E4F6 /* Batch in Frameworks */,
-				51C49D8E25F7B45000C8E4F6 /* FirebaseAnalytics in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5105378224125A0100589FC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				51C49D8325F7B40D00C8E4F6 /* OCMock.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				51D530C82412553C009E7531 /* BatchFirebaseDispatcher.framework */,
-				625AA2F52424F4BB000DACC4 /* BatchFirebaseDispatcherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,29 +103,6 @@
 			productReference = 51D530C82412553C009E7531 /* BatchFirebaseDispatcher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		625AA2F42424F4BB000DACC4 /* BatchFirebaseDispatcherTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 625AA2FD2424F4BB000DACC4 /* Build configuration list for PBXNativeTarget "BatchFirebaseDispatcherTests" */;
-			buildPhases = (
-				625AA2F12424F4BB000DACC4 /* Sources */,
-				625AA2F22424F4BB000DACC4 /* Frameworks */,
-				625AA2F32424F4BB000DACC4 /* Resources */,
-				625AA3312424FAA9000DACC4 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				625AA2FC2424F4BB000DACC4 /* PBXTargetDependency */,
-			);
-			name = BatchFirebaseDispatcherTests;
-			packageProductDependencies = (
-				51C49D8B25F7B44E00C8E4F6 /* Batch */,
-				51C49D8D25F7B45000C8E4F6 /* FirebaseAnalytics */,
-			);
-			productName = BatchFirebaseDispatcherTests;
-			productReference = 625AA2F52424F4BB000DACC4 /* BatchFirebaseDispatcherTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,9 +113,6 @@
 				ORGANIZATIONNAME = Batch;
 				TargetAttributes = {
 					51D530C72412553B009E7531 = {
-						CreatedOnToolsVersion = 11.3.1;
-					};
-					625AA2F42424F4BB000DACC4 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -200,20 +135,12 @@
 			projectRoot = "";
 			targets = (
 				51D530C72412553B009E7531 /* BatchFirebaseDispatcher */,
-				625AA2F42424F4BB000DACC4 /* BatchFirebaseDispatcherTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		51D530C62412553B009E7531 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		625AA2F32424F4BB000DACC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -231,22 +158,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		625AA2F12424F4BB000DACC4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		625AA2FC2424F4BB000DACC4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 51D530C72412553B009E7531 /* BatchFirebaseDispatcher */;
-			targetProxy = 625AA2FB2424F4BB000DACC4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		51D530CE2412553C009E7531 /* Debug */ = {
@@ -429,48 +341,6 @@
 			};
 			name = Release;
 		};
-		625AA2FE2424F4BB000DACC4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U5K2ETC2Y6;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = BatchFirebaseDispatcherTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.batch.ios.BatchFirebaseDispatcherTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		625AA2FF2424F4BB000DACC4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U5K2ETC2Y6;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = BatchFirebaseDispatcherTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.batch.ios.BatchFirebaseDispatcherTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -488,15 +358,6 @@
 			buildConfigurations = (
 				51D530D12412553C009E7531 /* Debug */,
 				51D530D22412553C009E7531 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		625AA2FD2424F4BB000DACC4 /* Build configuration list for PBXNativeTarget "BatchFirebaseDispatcherTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				625AA2FE2424F4BB000DACC4 /* Debug */,
-				625AA2FF2424F4BB000DACC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -529,16 +390,6 @@
 			productName = Batch;
 		};
 		51C49D7B25F7B32F00C8E4F6 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 51C49D7A25F7B32F00C8E4F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		51C49D8B25F7B44E00C8E4F6 /* Batch */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 51C49D7325F7B28800C8E4F6 /* XCRemoteSwiftPackageReference "Batch-iOS-SDK" */;
-			productName = Batch;
-		};
-		51C49D8D25F7B45000C8E4F6 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 51C49D7A25F7B32F00C8E4F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
